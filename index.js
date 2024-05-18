@@ -14,7 +14,7 @@ const background = new Sprite({
     x: 0,
     y: 0,
   },
-  imageSrc: "./assets/background.png",
+  imageSrc: "./assets/boxing.jpg",
 });
 
 const shop = new Sprite({
@@ -178,7 +178,7 @@ function animate() {
   c.fillRect(0, 0, canvas.width, canvas.height);
 
   background.update();
-  shop.update();
+  // shop.update();
   c.fillStyle = "rgba(255,255,255, 0.15";
   c.fillRect(0, 0, canvas.width, canvas.height);
   player.update();
