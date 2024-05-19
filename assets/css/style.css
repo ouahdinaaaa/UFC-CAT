@@ -29,13 +29,11 @@ Version      : 1.3
 * ----------------------------------------------------------------------------------------
 */
 body {
-  color: #9aa9c1;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 26px;
-  background: #0f1b39;
-  overflow-x: hidden;
+  background: #7a2e8a;
 }
 html,
 body {
@@ -182,13 +180,15 @@ section {
 
 /*START SECTION TITLE DESIGN*/
 .title_spectial {
-  color: #fff;
   text-align: center;
   font-weight: 600;
   position: relative;
   margin-bottom: 60px;
   text-transform: uppercase;
-  font-size: 24px;
+  font-family: 'Purple', sans-serif;
+  font-size: 37px;
+  color: rgb(237, 171, 28);
+  text-shadow: 3px 4px rgb(100, 42, 6);
 }
 .title_spectial:after {
   content: "";
@@ -208,7 +208,7 @@ section {
 /*END SECTION TITLE DESIGN*/
 /*START SCROLL TO TOP*/
 .topcontrol {
-  background: #66ff00 none repeat scroll 0 0;
+  background: #1b0341 none repeat scroll 0 0;
   border-radius: 30px;
   border: 2px solid #c62a88;
   bottom: 5px;
@@ -306,8 +306,8 @@ section {
 * ----------------------------------------------------------------------------------------
 */
 .site-logo img {
-  width: 150px;
-  height: auto;
+  width: auto;
+  height: 100px;
   margin-top: 5px;
 }
 .navbar-fixed .logo-hidden {
@@ -326,20 +326,21 @@ section {
   width: 100%;
   padding: 20px 0;
   top: 0;
-  -webkit-animation: fadeInDown 800ms;
-  animation: fadeInDown 800ms;
+  /* -webkit-animation: fadeInDown 800ms; */
+  /* animation: fadeInDown 800ms; */
   -webkit-backface-visibility: hidden;
   border-radius: 0px;
   background: #1b0341;
-  height: 13%;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.07);
 }
 
 #navigation {
   padding: 20px 0;
+  height: 13%;
 }
 #navigation.navbar-fixed {
   padding: 20px 0;
+  height: 20%;
 }
 .header_right {
   display: -webkit-box;
@@ -355,7 +356,7 @@ section {
   }
 }
 #main-menu {
-  margin-top: 12px;
+  margin-top: 32px;
 }
 #main-menu ul {
   list-style-type: none;
@@ -371,19 +372,23 @@ section {
   text-transform: capitalize;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-size: 30px;
+  color: #ffa527;
+  text-shadow: 1px 3px 3px #020000;
+  font-family: 'Purple';
 }
 #navigation.navbar-fixed #main-menu ul li a {
-  color: #fff;
+  color: #ffa527;
 }
 #navigation.navbar-fixed #main-menu ul li a:hover,
 #navigation.navbar-fixed #main-menu ul li a:focus,
 #main-menu ul li a:hover,
 #main-menu ul li a:focus {
-  color: #c62a88;
+  color: #ffffff;
 }
 
 .slicknav_nav_icon {
-  color: #fff;
+  color: #ffa527;
   font-size: 24px;
 }
 .slicknav_menu .slicknav_icon:before {
@@ -394,7 +399,7 @@ section {
   content: "\e68e";
   position: absolute;
   font-family: "themify";
-  color: #fff;
+  color: #ffa527;
   font-size: 20px;
 }
 #mobile_menu {
@@ -509,14 +514,23 @@ section {
   position: relative;
 }
 .hero-text h2 {
-  color: #fff;
-  font-size: 50px;
+  color: rgb(243, 44, 5);
+  font-size: 32px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 72px;
   padding-top: 200px;
   text-transform: capitalize;
   margin-bottom: 20px;
+  font-family: 'Purple';
+  text-shadow: 2px 3px 2px rgb(0, 0, 0);
+
+}
+.hero-text p {
+  font-family: 'Purple';
+  color: #ffb700;
+  font-size: 20px;
+  text-shadow: 1px 0.5px 1px #000000;
 }
 .home_btn {
   margin-top: 40px;
@@ -546,15 +560,21 @@ section {
 * ----------------------------------------------------------------------------------------
 */
 .about-text h2 {
-  color: #fff;
-  font-size: 40px;
   font-weight: 600;
   line-height: 58px;
   text-transform: capitalize;
   margin-bottom: 15px;
+  font-family: 'Purple', sans-serif;
+  font-size: 40px;
+  color: rgb(204, 04, 04);
+  text-shadow: 2px 4px rgb(0, 0, 0);
 }
 .about-text p {
   margin-bottom: 20px;
+  font-size: 28px;
+  color: #ffb300;
+  font-family: Kelly;
+  text-shadow: 1px 0.5px 1px #000000;
 }
 .about_btn {
   margin-top: 40px;
@@ -571,7 +591,6 @@ section {
 * ----------------------------------------------------------------------------------------
 */
 .process_area {
-  background-image: url(../img/line.png);
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
@@ -605,9 +624,11 @@ section {
   padding: 0px 20px;
 }
 .single_process h3 {
-  color: #fff;
   font-size: 20px;
   font-weight: 700;
+  font-family: 'Purple';
+  color: rgb(255, 183, 0);
+  text-shadow: 1px 2px rgb(100, 42, 6);
 }
 /*
 * ----------------------------------------------------------------------------------------
@@ -651,14 +672,20 @@ section {
 
 /*START TRADERS DESIGN*/
 .traders-text h2 {
-  color: #fff;
-  font-size: 26px;
   font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 20px;
+  font-family: 'Purple', sans-serif;
+  font-size: 40px;
+  color: rgb(191, 29, 0);
+  text-shadow: 3px 4px rgb(100, 42, 6);
 }
 .traders-text p {
   margin-bottom: 30px;
+  font-family: 'Purple';
+  color: #ffaa22;
+  font-size: 19px;
+  text-shadow: 1px 0.5px 1px #000000;
 }
 .traders_list {
   margin-bottom: 30px;
@@ -677,6 +704,10 @@ section {
 }
 .traders_list p {
   overflow: hidden;
+  font-family: 'Purple';
+  color: rgb(255, 183, 0);
+  font-size: 17px;
+  text-shadow: 1px 0.5px 1px #000000;
 }
 /*END TRADERS DESIGN*/
 /*
@@ -881,9 +912,12 @@ section {
 /*START DISTRIBUTION DESIGN*/
 
 .token-img h4 {
-  color: #fff;
   font-weight: 600;
   margin-bottom: 60px;
+  font-family: 'Purple', sans-serif;
+  font-size: 37px;
+  color: rgb(237, 171, 28);
+  text-shadow: 3px 4px rgb(100, 42, 6);
 }
 
 .fund-img h4 {
@@ -943,6 +977,16 @@ section {
 }
 .roadmap h5 {
   margin-top: 40px;
+  font-family: Candice;
+  color: rgb(212, 32, 0);
+  font-size: 28px;
+  text-shadow: 1px 0.5px 1px #000000;
+}
+.roadmap p {
+  font-family: 'Purple';
+  color: #ff8819;
+  text-shadow: 1px 0.5px 1px #000000;
+  font-size: 16px;
 }
 /* ----------------------------------------------------------------------------------------
 * 10.END ROADMAP DESIGN
@@ -1434,9 +1478,12 @@ section {
   width: 150px;
 }
 .footer_logo p {
-  color: #9aa9c1;
   margin-top: 10px;
   margin-bottom: 25px;
+  color: rgb(224, 4, 4);
+  font-family: Candice;
+  text-shadow: 1px 2px 3px black;
+  font-size: 20px;
 }
 .single_footer h4 {
   color: #fff;
@@ -1605,6 +1652,10 @@ section {
 .footer_copyright p {
   text-align: center;
   text-transform: capitalize;
+  font-family: 'Purple';
+  font-size: 18px;
+  color: rgb(212, 21, 21);
+  text-shadow: 2px 2px 2px #000000;
 }
 /*
 * ----------------------------------------------------------------------------------------

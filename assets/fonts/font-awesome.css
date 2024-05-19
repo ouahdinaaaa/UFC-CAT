@@ -11,6 +11,34 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Purple";
+  src: url("./Purple.ttf") format("truetype");
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+}
+
+@font-face {
+  font-family: "Candice";
+  src: url("./Candice.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Candy";
+  src: url("./Candy.ttf");
+}
+@font-face {
+  font-family: "Kelly";
+  src: url("./PrettyKelly.ttf");
+}
+@font-face {
+  font-family: "Banana";
+  src: url("./banana.ttf");
+}
+@font-face {
+  font-family: "Super";
+  src: url("./Super.ttf");
+}
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;

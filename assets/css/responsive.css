@@ -24,9 +24,15 @@
 
 /*START 768PX SIZE DEVICE*/
 @media only screen and (max-width:768px) {
-.bg-faded {background-color:#6bd1f3 ;}
-.navbar-fixed {background: #6bd1f3 ;}
-.navbar-brand { padding-top: 20px;}
+.bg-faded {
+	background-color: transparent;
+}
+.navbar-fixed {
+	background: #1b0341;
+}
+.navbar-brand {
+	padding-top: 20px;
+}
 .slicknav_menu {
 	font-size: 15px;
 	box-sizing: border-box;
@@ -37,8 +43,12 @@
 #main-menu {
 	margin-top: 5px;
 }
-#main-menu ul li a {font-size: 12px;}
-#main-menu ul li {padding: 0px 3px;}
+#main-menu ul li a {
+	font-size: 12px;
+}
+#main-menu ul li {
+	padding: 0px 3px;
+}
 .block-menu {
 	padding: 9px 30px;
 	margin-top:0px;
@@ -51,6 +61,7 @@
 .hero-text-img {
 	padding-top:50px;
 	padding-bottom:50px;
+	width: 100%;
 }
 .about-img{margin-top:60px;}
 .single_process {
