@@ -258,7 +258,6 @@ function animate() {
   ) {
     player.takeHit();
     enemy.isAttacking = false;
-
     gsap.to("#playerHealth", {
       width: player.health + "%",
     });
@@ -277,6 +276,20 @@ function animate() {
 animate();
 
 window.addEventListener("keydown", (event) => {
+  switch (event.key) {
+    case "d":
+    case "a":
+    case "w":
+    case " ":
+    case "ArrowRight":
+    case "ArrowLeft":
+    case "ArrowUp":
+    case "ArrowDown":
+    case "Enter":
+      event.preventDefault();
+      break;
+  }
+
   if (!player.dead) {
     switch (event.key) {
       case "d":
@@ -290,11 +303,15 @@ window.addEventListener("keydown", (event) => {
       case "w":
         player.velocity.y = -20;
         break;
+      case "s":
+        player.velocity.y = 20; // Ajouter une action pour la flèche du bas si nécessaire
+        break;
       case " ":
         player.attack();
         break;
     }
   }
+
   if (!enemy.dead) {
     switch (event.key) {
       case "ArrowRight":
@@ -308,7 +325,10 @@ window.addEventListener("keydown", (event) => {
       case "ArrowUp":
         enemy.velocity.y = -20;
         break;
-      case "4":
+      case "ArrowDown":
+        enemy.velocity.y = 20; // Ajouter une action pour la flèche du bas si nécessaire
+        break;
+      case "Enter":
         enemy.attack();
         break;
     }
