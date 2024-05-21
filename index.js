@@ -42,7 +42,7 @@ const player = new Fighter({
   },
   imageSrc: "./assets/samuraiMack/Idle.png",
   framesMax: 8,
-  scale: 2.5,
+  scale: 2.8,
   offset: {
     x: 215,
     y: 157,
@@ -103,7 +103,7 @@ const enemy = new Fighter({
   },
   imageSrc: "./assets/kenji/Idle.png",
   framesMax: 4,
-  scale: 2.5,
+  scale: 2.8,
   offset: {
     x: 215,
     y: 157,
