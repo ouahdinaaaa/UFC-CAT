@@ -190,10 +190,13 @@ function animate() {
   // Player movements
 
   if (keys.a.pressed && player.lastKey === "a") {
-    player.velocity.x = -5;
+    if (player.position.x > 0) {
+      player.velocity.x = -5;
+    }
     player.switchSprite("run");
   } else if (keys.d.pressed && player.lastKey === "d") {
-    player.velocity.x = 5;
+    if (player.position.x + player.width < canvas.width)
+        player.velocity.x = 5;
     player.switchSprite("run");
   } else {
     player.switchSprite("idle");
@@ -213,7 +216,8 @@ function animate() {
     enemy.velocity.x = -5;
     enemy.switchSprite("run");
   } else if (keys.ArrowRight.pressed && enemy.lastKey === "ArrowRight") {
-    enemy.velocity.x = 5;
+    if (enemy.position.x + enemy.width < canvas.width)
+      enemy.velocity.x = 5;
     enemy.switchSprite("run");
   } else {
     enemy.switchSprite("idle");
@@ -301,7 +305,8 @@ window.addEventListener("keydown", (event) => {
         player.lastKey = "a";
         break;
       case "w":
-        player.velocity.y = -20;
+        if (player.velocity.y === 0)
+            player.velocity.y = -20;
         break;
       case "s":
         player.velocity.y = 20; // Ajouter une action pour la flèche du bas si nécessaire
@@ -323,7 +328,7 @@ window.addEventListener("keydown", (event) => {
         enemy.lastKey = "ArrowLeft";
         break;
       case "ArrowUp":
-        enemy.velocity.y = -20;
+        if (enemy.velocity.y === 0) enemy.velocity.y = -20;
         break;
       case "ArrowDown":
         enemy.velocity.y = 20; // Ajouter une action pour la flèche du bas si nécessaire

@@ -340,7 +340,7 @@ section {
 }
 #navigation.navbar-fixed {
   padding: 20px 0;
-  height: 18%;
+  height: 20%;
 }
 .header_right {
   display: -webkit-box;
@@ -540,6 +540,7 @@ section {
 }
 .hero-text-img img {
   width: 100%;
+  height: 600px;
 }
 .item-bounce {
   -webkit-animation: bounce 8s infinite ease-in-out;
@@ -799,7 +800,7 @@ section {
   margin: 0 0 30px;
 }
 
-.ca-starts-in .timer-area div {
+.ca-starts-in .timer-area w {
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
