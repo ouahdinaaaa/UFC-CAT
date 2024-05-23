@@ -57,7 +57,7 @@
           <div class="col-lg-2 col-md-3 col-sm-4">
             <div class="site-logo">
               <a class="navbar-logo" href="index.html">
-                <img src="assets/img/catking.jpg" alt=""/>
+                <img src="assets/img/blackcat.png" alt=""/>
               </a>
             </div>
           </div>
@@ -83,6 +83,8 @@
       <!--- END CONTAINER -->
     </div>
     <!-- END NAVBAR -->
+
+
 
     <!-- START HOME -->
     <section id="home" class="home_bg">
@@ -233,7 +235,7 @@
             <div class="platform-img">
               <img
                 style="width: 75%; height: 75%"
-                src="./assets/img/catsoon.jpg"
+                src="./assets/img/unicat.png"
                 class="item-bounce img-fluid"
                 alt=""
               />
@@ -279,55 +281,98 @@
       </div>
       <!--- END CONTAINER -->
     </section>
-    <!-- END TRADERS -->
-
-    <!-- START TOKEN IMAGE AREA -->
-    <section id="token" class="token_img_area section-padding">
-      <div class="container">
-        <div class="row text-center">
-          <div
-            class="col-lg-12 col-sm-12 col-xs-12 wow fadeInUp"
-            data-wow-duration="1s"
-            data-wow-delay="0.2s"
-            data-wow-offset="0"
-          >
-            <div class="token-img">
-              <h4>Token Distribution</h4>
-              <img
-                src="assets/img/ufcsscat.jpg"
-                style="height: 60%; width: 65%"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
-          </div>
-          <!--- END COL -->
-        </div>
-        <!--- END ROW -->
-      </div>
-      <!--- END CONTAINER -->
-    </section>
     <!-- END TOKEN IMAGE AREA -->
 
-    <!-- START ROADMAP  -->
-    <section id="roadmap" class="our_roadmap section-padding">
-      <div class="container">
-        <h2 class="title_spectial">Roadmap</h2>
-        <div class="row align-items-center">
-          <div class="col p-3" style="width: 200px; height: 200px; background-color: black;"></div>
-          <div class="col p-3" style="width: 200px; height: 200px; background-color: black;"></div>
-          <div class="col p-3" style="width: 200px; height: 200px; background-color: black;"></div>
-        </div>
-          <!--END  COL  -->
+    <section id="tokenomics">
+      <div>
+        <div>
+          <h2 class="col-100" style="font-family: purple; font-size: 300%;">TOKENOMICS</h2>
+          <div class="contract-copy col-100;">
+            <p style="font-size: 200%;">CONTRACT: Soon </p> 
+            <input type="text" value="Soon" id="contract" class="hiddens">
+            <button onclick="copyContract('Soon', 'btn2')" class="copybtn" id="btn2">
+              <img src="./assets/img/copy.svg" alt="copy contract">
+            </button>
+          </div>
         </div>
       </div>
-        <!--END  ROW  -->
-      <!-- END CONTAINER  -->
+    </section>
+    
+    <div class="col-container stats">
+      <div class="col-33 stat-container">
+        <div class="icon">
+          <img src="./assets/img/check.svg" alt="icon1">
+        </div>
+        <div class="stat-circle">
+          <p>TOTAL SUPPLY</p>
+          <span class="stat">100B</span>
+        </div>
+      </div>
+      <div class="col-33 stat-container">
+        <div class="icon">
+          <img src="./assets/img/check.svg" alt="icon2">
+        </div>
+        <div class="stat-circle">
+          <p>TAX</p>
+          <span class="stat">0%</span>
+        </div>
+      </div>
+      <div class="col-33 stat-container">
+        <div class="icon">
+          <img src="./assets/img/check.svg" alt="icon3">
+        </div>
+        <div class="stat-circle">
+          <p>LIQUIDITY</p>
+          <span class="stat">BURNT</span>
+        </div>
+      </div>
+    </div>
+    
+
+    <script>
+      function copyContract(text, btnId) {
+        // Sélectionnez l'élément de texte à copier
+        var contractElement = document.getElementById('contract');
+        
+        // Rendre l'élément de texte visible temporairement
+        contractElement.classList.remove('hiddens');
+        
+        // Copiez le texte dans le presse-papiers
+        contractElement.select();
+        document.execCommand('copy');
+        
+        // Cacher l'élément de texte à nouveau
+        contractElement.classList.add('hiddens');
+        
+        // Changez le texte du bouton pour indiquer que le contrat a été copié
+        var btn = document.getElementById(btnId);
+        btn.textContent = 'Copié!';
+      }
+    </script>
+    
+<section id="roadmap" class="our_roadmap section-padding">
+  <div class="row text-center"> 
+        <h4 style="font-size: 50px;font-family: Purple;">Roadmap</h4>
+      <div class="containerse">
+        <div class="case">
+            <div class="front">Phase 1</div>
+            <div class="back">Launch UFC Cat in Solana.</div>
+        </div>
+        <div class="case">
+            <div class="front">Phase 2</div>
+            <div class="back">Expand the influence of the UFC Cat token through strategic marketing campaigns.</div>
+        </div>
+        <div class="case">
+            <div class="front">Phase 3</div>
+            <div class="back">Accelerate efforts to make UFC CAT Token a dominant player in the cryptocurrency space. 
+              Forge partnerships with mainstream companies and institutions to increase adoption.</div>
+        </div>
+    </div>
+    </div>
     </section>
     <!-- END ROADMAP -->
 
     <!--Start play game candy-->
-
     <section id="game" class="section-padding">
       <div class="container">
         <h2 class="title_spectial">Play Game</h2>
@@ -522,7 +567,7 @@
             data-wow-offset="0"
           >
             <div class="footer_logo">
-              <img src="assets/img/catking.jpg" />
+              <img src="assets/img/blackcat.png" />
               <p>Biggest coin.</p>
             </div>
             <div class="footer_profile">

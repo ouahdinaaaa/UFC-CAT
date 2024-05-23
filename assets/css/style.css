@@ -28,8 +28,223 @@ Version      : 1.3
 * 01.GENERAL STYLE
 * ----------------------------------------------------------------------------------------
 */
+
+.contract-copy {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+}
+
+.hiddens-text {
+  color: transparent; /* Rend le texte transparent */
+}
+
+
+.hiddens {
+  display : none;
+}
+
+.copybtn {
+  background-color: transparent; /* Fond transparent */
+  border: none; /* Supprime la bordure */
+  cursor: pointer; /* Curseur pointeur */
+  padding: 0; /* Supprime le rembourrage */
+}
+
+/* Style pour l'image à l'intérieur du bouton */
+.copybtn img {
+  width: 24px; /* Largeur de l'image */
+  height: 24px; /* Hauteur de l'image */
+  vertical-align: middle; /* Alignement vertical au centre */
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containerse {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px; /* Espacement entre les cases */
+}
+
+.case {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  background-color: lightblue;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.case:nth-child(2) {
+  width: 300px;
+  height: 350px;
+  /* font-size: 50px; */
+}
+
+.case:nth-child(3) {
+  width: 300px;
+  height: 400px;
+  /* font-size: 30px; */
+}
+
+.case:nth-child(4) {
+  width: 300px;
+  height: 450px;
+
+}
+
+.case:hover {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  font-size: 1rem;
+}
+
+.front {
+  background-color: rgb(58, 10, 91);
+  font-size: 60px;
+  color: #ffffff;
+  border: 5px solid #000000; /* Ajoute une bordure de 2px en noir */
+  background-image: url('../img/catfight.png'); /* Chemin vers votre image */
+  background-size: cover; /* Adapte l'image à la taille de l'élément */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  -webkit-text-stroke: 6px #000000; /* Bordure de texte noire */
+  padding-top: 30px; /* Ajustez cette valeur selon vos besoins */
+  display: flex;
+  align-items: flex-start; /* Aligne le texte en haut */
+  justify-content: center; /* Centre le texte horizontalement */
+}
+
+
+
+
+.back {
+  background-color: rgb(65, 11, 66);
+  transform: rotateY(180deg);
+  color: #000000;
+}
+
+
+/* Augmenter la taille du texte dans les cercles */
+/* Styles pour la section tokenomics */
+#tokenomics {
+  background-color: var(--navy);
+  color: white;
+  padding-top: 90px;
+  padding-bottom: 105px;
+}
+
+/* Styles pour les éléments de statistiques */
+.stats .stat-circle {
+  background-color: red;
+  width: 217px;
+  font-family: purple;
+  color: #000000;
+  height: 217px;
+  border-radius: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats .stat-circle span {
+  font-size: 52px;
+}
+
+/* Styles pour les animations AOS */
+[data-aos][data-aos][data-aos-delay="50"],
+body[data-aos-delay="50"] [data-aos] {
+  transition-delay: 0;
+}
+
+[data-aos][data-aos][data-aos-easing=ease],
+body[data-aos-easing=ease] [data-aos] {
+  transition-timing-function: ease;
+}
+
+[data-aos][data-aos][data-aos-duration="400"],
+body[data-aos-duration="400"] [data-aos] {
+  transition-duration: .4s;
+}
+
+[data-aos^=fade][data-aos^=fade] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+/* Styles spécifiques pour l'animation fade-up-right */
+[data-aos=fade-up-right] {
+  transform: translate3d(-100px, 100px, 0);
+}
+
+
+.col-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.stats .stat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col-33 {
+  width: calc(33.33% - 20px);
+  padding: 0 10px;
+}
+
+.stats .stat-container .icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -30px; /* Adjust as necessary */
+  z-index: 10;
+}
+
+.stats .stat-container .icon img {
+  width: 40px; /* Adjust size as necessary */
+  height: 40px; /* Adjust size as necessary */
+}
+
+.stats .stat-circle {
+  background-color: red;
+  width: 217px;
+  font-family: purple;
+  color: #000000;
+  height: 217px;
+  border-radius: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats .stat-circle span {
+  font-size: 52px;
+}
+
+
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Purple", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 26px;
@@ -143,27 +358,33 @@ fieldset {
   z-index: 10000;
 }
 
-@-webkit-keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+#tokenomics {
+  background-color: var(--navy);
+  color: white;
+  padding-top: 90px;
+  padding-bottom: 105px;
+}
+
+#tokenomics h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 810px) {
+  .col-33, .col-40, .col-50, .col-60, .col-100 {
+      width: 100%;
   }
 }
 
-@keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+@media (max-width: 810px) {
+  .contract-copy {
+      flex-direction: column;
+      overflow: hidden;
+      text-align: center;
+      overflow-wrap: anywhere;
   }
 }
+
 .no-padding {
   padding: 0;
 }
