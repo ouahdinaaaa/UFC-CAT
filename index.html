@@ -45,6 +45,7 @@
         <div class="status-mes"></div>
       </div>
     </div>
+    <!-- <img src="assets/img/cute1.png" alt=""> -->
     <!-- END PRELOADER -->
 
     <!-- START NAVBAR -->
@@ -57,7 +58,7 @@
           <div class="col-lg-2 col-md-3 col-sm-4">
             <div class="site-logo">
               <a class="navbar-logo" href="index.html">
-                <img src="assets/img/blackcat.png" alt=""/>
+                <img src="assets/img/blackcat.png" alt="" />
               </a>
             </div>
           </div>
@@ -84,8 +85,6 @@
     </div>
     <!-- END NAVBAR -->
 
-
-
     <!-- START HOME -->
     <section id="home" class="home_bg">
       <div class="container">
@@ -105,7 +104,7 @@
           <!--- END COL -->
           <div class="col-lg-6 col-sm-12 col-xs-12 text-center">
             <div class="hero-text-img">
-              <img src="./assets/img/vctory.png" class="item-bounce" alt=""/>
+              <img src="./assets/img/vctory.png" class="item-bounce" alt="" />
             </div>
           </div>
           <!--- END COL -->
@@ -118,7 +117,7 @@
 
     <!-- START ABOUT -->
     <section id="about" class="about_us section-padding">
-      <div class="container ">
+      <div class="container">
         <h2 class="title_spectial">About UFC CAT FIGHT</h2>
         <div class="row">
           <div
@@ -143,8 +142,7 @@
             data-wow-duration="1s"
             data-wow-delay="0.2s"
             data-wow-offset="0"
-          >
-          </div>
+          ></div>
           <!--- END COL -->
         </div>
         <!--- END ROW -->
@@ -286,22 +284,28 @@
     <section id="tokenomics">
       <div>
         <div>
-          <h2 class="col-100" style="font-family: purple; font-size: 300%;">TOKENOMICS</h2>
+          <h2 class="col-100" style="font-family: purple; font-size: 300%">
+            TOKENOMICS
+          </h2>
           <div class="contract-copy col-100;">
-            <p style="font-size: 200%;">CONTRACT: Soon </p> 
-            <input type="text" value="Soon" id="contract" class="hiddens">
-            <button onclick="copyContract('Soon', 'btn2')" class="copybtn" id="btn2">
-              <img src="./assets/img/copy.svg" alt="copy contract">
+            <p style="font-size: 200%">CONTRACT: Soon</p>
+            <input type="text" value="Soon" id="contract" class="hiddens" />
+            <button
+              onclick="copyContract('Soon', 'btn2')"
+              class="copybtn"
+              id="btn2"
+            >
+              <img src="./assets/img/copy.svg" alt="copy contract" />
             </button>
           </div>
         </div>
       </div>
     </section>
-    
+
     <div class="col-container stats">
       <div class="col-33 stat-container">
         <div class="icon">
-          <img src="./assets/img/check.svg" alt="icon1">
+          <img src="./assets/img/check.svg" alt="icon1" />
         </div>
         <div class="stat-circle">
           <p>TOTAL SUPPLY</p>
@@ -310,7 +314,7 @@
       </div>
       <div class="col-33 stat-container">
         <div class="icon">
-          <img src="./assets/img/check.svg" alt="icon2">
+          <img src="./assets/img/check.svg" alt="icon2" />
         </div>
         <div class="stat-circle">
           <p>TAX</p>
@@ -319,7 +323,7 @@
       </div>
       <div class="col-33 stat-container">
         <div class="icon">
-          <img src="./assets/img/check.svg" alt="icon3">
+          <img src="./assets/img/check.svg" alt="icon3" />
         </div>
         <div class="stat-circle">
           <p>LIQUIDITY</p>
@@ -327,205 +331,224 @@
         </div>
       </div>
     </div>
-    
 
     <script>
       function copyContract(text, btnId) {
         // Sélectionnez l'élément de texte à copier
-        var contractElement = document.getElementById('contract');
-        
+        var contractElement = document.getElementById("contract");
+
         // Rendre l'élément de texte visible temporairement
-        contractElement.classList.remove('hiddens');
-        
+        contractElement.classList.remove("hiddens");
+
         // Copiez le texte dans le presse-papiers
         contractElement.select();
-        document.execCommand('copy');
-        
+        document.execCommand("copy");
+
         // Cacher l'élément de texte à nouveau
-        contractElement.classList.add('hiddens');
-        
+        contractElement.classList.add("hiddens");
+
         // Changez le texte du bouton pour indiquer que le contrat a été copié
         var btn = document.getElementById(btnId);
-        btn.textContent = 'Copié!';
+        btn.textContent = "Copied";
       }
     </script>
-    
-<section id="roadmap" class="our_roadmap section-padding">
-  <div class="row text-center"> 
-        <h4 style="font-size: 50px;font-family: Purple;">Roadmap</h4>
-      <div class="containerse">
-        <div class="case">
+
+    <section id="roadmap" class="section-padding">
+      <div class="text-center">
+        <h4 style="font-size: 5em; font-family: Purple">Roadmap</h4>
+        <div class="containerse">
+          <div class="case">
             <div class="front">Phase 1</div>
             <div class="back">Launch UFC Cat in Solana.</div>
-        </div>
-        <div class="case">
+          </div>
+          <div class="case">
             <div class="front">Phase 2</div>
-            <div class="back">Expand the influence of the UFC Cat token through strategic marketing campaigns.</div>
-        </div>
-        <div class="case">
+            <div class="back">
+              Expand the influence of the UFC Cat token through strategic
+              marketing campaigns.
+            </div>
+          </div>
+          <div class="case">
             <div class="front">Phase 3</div>
-            <div class="back">Accelerate efforts to make UFC CAT Token a dominant player in the cryptocurrency space. 
-              Forge partnerships with mainstream companies and institutions to increase adoption.</div>
+            <div class="back">
+              Accelerate efforts to make UFC CAT Token a dominant player in the
+              cryptocurrency space. Forge partnerships with mainstream companies
+              and institutions to increase adoption.
+            </div>
+          </div>
         </div>
-    </div>
-    </div>
+      </div>
     </section>
     <!-- END ROADMAP -->
 
-    <!--Start play game candy-->
-    <section id="game" class="section-padding">
+    <!--Start play game on phone -->
+    <section id="mobile_game" class="section-padding">
+      <div class="game_on_phone container">
+        <h2 class="title_spectial">Play Game</h2>
+          <p class="text-center" style="  color: red; font-size: 2em;">Available only on computer</p>
+      </div>
+    </section>
+
+    <!--End play game on phone -->
+
+
+    <!--Start play game on computer -->
+
+    <section id="game" class="section-padding games">
       <div class="container">
         <h2 class="title_spectial">Play Game</h2>
-    <div
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* background-image: url('./assets/background-body.jpg'); */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 100%;
-        min-width: 50%;
-      "
-    >
-      <!-- Red container div -->
-      <div style="position: relative; display: inline-block">
         <div
           style="
-            position: absolute;
             display: flex;
-            width: 100%;
+            justify-content: center;
             align-items: center;
-            padding: 20px;
+            /* background-image: url('./assets/background-body.jpg'); */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100%;
+            min-width: 50%;
           "
         >
-          <!-- Player health -->
-          <div
-            style="
-              position: relative;
-              width: 100%;
-              display: flex;
-              justify-content: flex-end;
-              border: 4px solid white;
-              border-right: none;
-              border-top-left-radius: 8px;
-              border-bottom-left-radius: 8px;
-            "
-          >
+          <!-- Red container div -->
+          <div style="position: relative; display: inline-block">
             <div
-              style="
-                background-color: red;
-                height: 30px;
-                width: 100%;
-                border-top-left-radius: 8px;
-                border-bottom-left-radius: 8px;
-              "
-            ></div>
-            <div
-              id="playerHealth"
               style="
                 position: absolute;
-                background-color: #818cf8;
+                display: flex;
                 width: 100%;
-                height: 30px;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                width: 100%;
-                border-top-left-radius: 8px;
-                border-bottom-left-radius: 8px;
+                align-items: center;
+                padding: 20px;
               "
-            ></div>
-          </div>
-          <!-- Timer -->
-          <div
-            id="timer"
-            style="
-              background-color: black;
-              height: 50px;
-              width: 100px;
-              flex-shrink: 0;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              color: white;
-              border: 4px solid white;
-              border-radius: 8px;
-            "
-          >
-            10
-          </div>
-          <!-- Enemy health -->
-          <div
-            style="
-              position: relative;
-              width: 100%;
-              display: flex;
-              justify-content: flex-end;
-              border: 4px solid white;
-              border-left: none;
-              border-top-right-radius: 8px;
-              border-bottom-right-radius: 8px;
-            "
-          >
+            >
+              <!-- Player health -->
+              <div
+                style="
+                  position: relative;
+                  width: 100%;
+                  display: flex;
+                  justify-content: flex-end;
+                  border: 4px solid white;
+                  border-right: none;
+                  border-top-left-radius: 8px;
+                  border-bottom-left-radius: 8px;
+                "
+              >
+                <div
+                  style="
+                    background-color: red;
+                    height: 30px;
+                    width: 100%;
+                    border-top-left-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                  "
+                ></div>
+                <div
+                  id="playerHealth"
+                  style="
+                    position: absolute;
+                    background-color: #818cf8;
+                    width: 100%;
+                    height: 30px;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 100%;
+                    border-top-left-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                  "
+                ></div>
+              </div>
+              <!-- Timer -->
+              <div
+                id="timer"
+                style="
+                  background-color: black;
+                  height: 50px;
+                  width: 100px;
+                  flex-shrink: 0;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: white;
+                  border: 4px solid white;
+                  border-radius: 8px;
+                "
+              >
+                10
+              </div>
+              <!-- Enemy health -->
+              <div
+                style="
+                  position: relative;
+                  width: 100%;
+                  display: flex;
+                  justify-content: flex-end;
+                  border: 4px solid white;
+                  border-left: none;
+                  border-top-right-radius: 8px;
+                  border-bottom-right-radius: 8px;
+                "
+              >
+                <div
+                  style="
+                    background-color: red;
+                    height: 30px;
+                    width: 100%;
+                    border-top-right-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                  "
+                ></div>
+                <div
+                  id="enemyHealth"
+                  style="
+                    position: absolute;
+                    background-color: #818cf8;
+                    width: 100%;
+                    height: 30px;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    border-top-right-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                  "
+                ></div>
+              </div>
+            </div>
             <div
-              style="
-                background-color: red;
-                height: 30px;
-                width: 100%;
-                border-top-right-radius: 8px;
-                border-bottom-right-radius: 8px;
-              "
-            ></div>
-            <div
-              id="enemyHealth"
+              id="displayText"
               style="
                 position: absolute;
-                background-color: #818cf8;
-                width: 100%;
-                height: 30px;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 top: 0;
                 right: 0;
                 bottom: 0;
                 left: 0;
-                border-top-right-radius: 8px;
-                border-bottom-right-radius: 8px;
+                display: none;
+                font-size: 42px;
               "
-            ></div>
+            >
+              Tie
+            </div>
+            <canvas
+              style="border: 4px solid white; border-radius: 4px; width: 100%"
+            ></canvas>
           </div>
         </div>
-        <div
-          id="displayText"
-          style="
-            position: absolute;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            display: none;
-            font-size: 42px;
-          "
-        >
-          Tie
-        </div>
-        <canvas style="border: 4px solid white; border-radius: 4px; width: 100%;"></canvas>
-      </div>
-    </div>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
-      integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="./script/classes.js"></script>
-    <script src="./script/utils.js"></script>
-    <script src="./index.js"></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+          integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        ></script>
+        <script src="./script/classes.js"></script>
+        <script src="./script/utils.js"></script>
+        <script src="./index.js"></script>
       </div>
     </section>
     <!--End play game candy-->
@@ -537,15 +560,39 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <div class="partner">
-              <a><img src="assets/img/partner/1.png" alt="image" style="width: 70%"/></a>
+              <a
+                ><img
+                  src="assets/img/partner/1.png"
+                  alt="image"
+                  style="width: 70%"
+              /></a>
               <a><img src="assets/img/partner/2.png" alt="image" /></a>
               <a><img src="assets/img/partner/3.png" alt="image" /></a>
-              <a><img src="assets/img/partner/dextools.png" alt="image" style="width: 40%"/></a>
-              <a><img src="assets/img/partner/raydium.png" alt="image" style="width: 40%"/></a>
-              <a><img src="assets/img/partner/phantom1.png" alt="image" style="width: 45%"/></a>
-              <a><img src="assets/img/partner/1.png" alt="image" style="width: 70%"/></a>
+              <a
+                ><img
+                  src="assets/img/partner/dextools.png"
+                  alt="image"
+                  style="width: 40%"
+              /></a>
+              <a
+                ><img
+                  src="assets/img/partner/raydium.png"
+                  alt="image"
+                  style="width: 40%"
+              /></a>
+              <a
+                ><img
+                  src="assets/img/partner/phantom1.png"
+                  alt="image"
+                  style="width: 45%"
+              /></a>
+              <a
+                ><img
+                  src="assets/img/partner/1.png"
+                  alt="image"
+                  style="width: 70%"
+              /></a>
               <a><img src="assets/img/partner/2.png" alt="image" /></a>
-
             </div>
           </div>
           <!-- END COL  -->
@@ -592,7 +639,7 @@
           <!-- Ajout de cette balise -->
           <div class="col-lg-12 text-center">
             <div class="footer_copyright">
-              <p> &copy; 2024 UFC CAT FIGHT. All Rights Reserved.</p>
+              <p>&copy; 2024 UFC CAT FIGHT. All Rights Reserved.</p>
             </div>
           </div>
         </div>

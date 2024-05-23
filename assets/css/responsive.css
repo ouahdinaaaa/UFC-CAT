@@ -24,8 +24,15 @@
 
 /*START 768PX SIZE DEVICE*/
 @media only screen and (max-width:768px) {
+
+.games {
+	display: none;
+}
+.game_on_phone {
+	display: blo;
+  }
 .bg-faded {
-	background-color: transparent;
+	background-color: #1b0341;
 }
 .navbar-fixed {
 	background: #1b0341;
@@ -104,11 +111,7 @@
 	display: inline-block !important;
 	padding: 9px 30px!important;
 }
-    .hero-text h2 {
-		padding-top: 200px;
-        font-size: 30px;
-        line-height: 40px;
-    }
+
 
 .whitepaper_img {
 	text-align: center;

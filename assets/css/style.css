@@ -29,6 +29,10 @@ Version      : 1.3
 * ----------------------------------------------------------------------------------------
 */
 
+.game_on_phone {
+  display: none;
+}
+
 .contract-copy {
   display: flex;
   justify-content: center; /* Centre horizontalement */
@@ -243,19 +247,24 @@ body[data-aos-duration="400"] [data-aos] {
 }
 
 
-body {
+
+body, html {
   font-family: "Purple", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 26px;
   background: #7a2e8a;
-  /* background-image: url('../img/ufclooog.jpg'); */
-}
-html,
-body {
+  background-position: center center;
+  background-origin: content-box;
+  background-size: cover;
+  background-attachment: fixed;
+  position: fixed;
+  background-image: url('../img/ufclooog.jpg');
   height: 100%;
   position: relative;
+  width: 100%;
 }
+
 h1,
 h2,
 h3,
@@ -322,13 +331,29 @@ fieldset {
 }
 /*START PRELOADER DESIGN*/
 .preloader {
-  background: #0f1b39;
+  background: #7a2e8a;
   bottom: 0;
   left: 0;
   position: fixed;
   right: 0;
   top: 0;
   z-index: 99999;
+}
+
+img1 {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: auto;
+}
+
+img2 {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  width: 100px;
+  height: auto;
 }
 
 .status-mes {
@@ -548,8 +573,8 @@ section {
   width: 100%;
   padding: 20px 0;
   top: 0;
-  /* -webkit-animation: fadeInDown 800ms; */
-  /* animation: fadeInDown 800ms; */
+  -webkit-animation: fadeInDown 800ms; 
+  animation: fadeInDown 800ms;
   -webkit-backface-visibility: hidden;
   border-radius: 0px;
   background: #1b0341;
@@ -558,11 +583,9 @@ section {
 
 #navigation {
   padding: 20px 0;
-  height: 13%;
 }
 #navigation.navbar-fixed {
   padding: 20px 0;
-  height: 20%;
 }
 .header_right {
   display: -webkit-box;
@@ -762,7 +785,7 @@ section {
 }
 .hero-text-img img {
   width: 100%;
-  height: 600px;
+  height: 100%;
 }
 .item-bounce {
   -webkit-animation: bounce 8s infinite ease-in-out;
@@ -1692,11 +1715,12 @@ section {
 * ----------------------------------------------------------------------------------------
 */
 .footer {
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   padding-top: 80px;
-  background: #6bd1f3";
+  background: #310758;
   position: relative;
 }
+
 .footer_logo img {
   width: 150px;
 }
