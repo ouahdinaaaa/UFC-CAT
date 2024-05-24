@@ -185,7 +185,7 @@ body[data-aos-duration="400"] [data-aos] {
 .col-container {
   display: flex;
   justify-content: space-between; /* Optionnel: contrôle l'espacement entre les éléments */
-  gap: 10px; /* Contrôle l'espacement entre les colonnes, ajustez selon vos besoins */
+  gap: 5px; /* Contrôle l'espacement entre les colonnes, ajustez selon vos besoins */
 }
 
 .stat-container {
@@ -199,17 +199,7 @@ body[data-aos-duration="400"] [data-aos] {
   padding: 0 10px;
 }
 
-.stats .stat-container .icon {
-  display: flex;
-  justify-content: center;
-  margin-bottom: -30px; /* Adjust as necessary */
-  z-index: 10;
-}
 
-.stats .stat-container .icon img {
-  width: 40px; /* Adjust size as necessary */
-  height: 40px; /* Adjust size as necessary */
-}
 
 .stats .stat-circle {
   background-color: rgb(245, 141, 21);
