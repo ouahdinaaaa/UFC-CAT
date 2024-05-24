@@ -619,8 +619,13 @@
 .fa-linkedin-square:before {
   content: "\f08c";
 }
+
 .fa-telegram-square:before {
   content: "\f2c6";
+}
+
+.fa-discord-square:before {
+  content: "\f392";
 }
 
 .fa-thumb-tack:before {
@@ -838,6 +843,10 @@
 }
 .fa-telegram:before {
   content: "\f2c6";
+}
+
+.fa-discord:before {
+  content: "\f392";
 }
 
 .fa-rotate-left:before,

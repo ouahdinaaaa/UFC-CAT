@@ -144,7 +144,7 @@ fieldset {
 	font-weight: 600;
 	margin-bottom: 60px;
 	text-transform: uppercase;
-	font-size: 24px;
+	font-size: 20px;
 }
 .title_spectial_two {
 color: #fff;
@@ -152,7 +152,7 @@ text-align: center;
 font-weight: 600;
 margin-bottom: 60px;
 text-transform: uppercase;
-font-size: 24px;
+font-size: 20px;
 }
 .title_spectial_two:after {
 	content: "";
@@ -1616,6 +1616,7 @@ display: inline-block;
 .s_instagram{background: -webkit-linear-gradient(bottom, #9d0191, #9d0191);background: linear-gradient(0deg, #9d0191, #9d0191);}
 .s_linkedin{background: -webkit-linear-gradient(bottom, #0e76a8, #0e76a8);background: linear-gradient(0deg, #0e76a8, #0e76a8);}
 .s_telegram{background: -webkit-linear-gradient(bottom, #0e76a8, #008ed0);background: linear-gradient(0deg, #00ddff, #0e76a8);}
+.s_discord{background: -webkit-linear-gradient(bottom, #0e76a8, #5e2885);background: linear-gradient(0deg, #00ddff, #5e2885);}
 /*END FOOTER SOCIAL DESIGN*/
 .footer_copyright {
 	border-top: 1px solid rgba(255,255,255,0.08);
