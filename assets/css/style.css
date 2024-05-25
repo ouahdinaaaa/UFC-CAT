@@ -43,9 +43,8 @@ Version      : 1.3
   color: transparent; /* Rend le texte transparent */
 }
 
-
 .hiddens {
-  display : none;
+  display: none;
 }
 
 .copybtn {
@@ -61,7 +60,6 @@ Version      : 1.3
   height: 24px; /* Hauteur de l'image */
   vertical-align: middle; /* Alignement vertical au centre */
 }
-
 
 * {
   margin: 0;
@@ -84,6 +82,7 @@ Version      : 1.3
   background-color: lightblue;
   transition: transform 0.6s;
   transform-style: preserve-3d;
+  font-family: purple;
   cursor: pointer;
 }
 
@@ -102,14 +101,14 @@ Version      : 1.3
 .case:nth-child(4) {
   width: 300px;
   height: 400px;
-
 }
 
 .case:hover {
   transform: rotateY(180deg);
 }
 
-.front, .back {
+.front,
+.back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -125,26 +124,26 @@ Version      : 1.3
   font-size: 60px;
   color: #ffffff;
   border: 5px solid #000000; /* Ajoute une bordure de 2px en noir */
-  background-image: url('../img/catfight.png'); /* Chemin vers votre image */
+  background-image: url("../img/catfight.png"); /* Chemin vers votre image */
   background-size: cover; /* Adapte l'image à la taille de l'élément */
   background-position: center; /* Centre l'image */
   background-repeat: no-repeat; /* Empêche la répétition de l'image */
-  -webkit-text-stroke: 6px #000000; /* Bordure de texte noire */
+  -webkit-text-stroke: 3px #000000; /* Bordure de texte noire */
   padding-top: 30px; /* Ajustez cette valeur selon vos besoins */
   display: flex;
+  font-family: purple;
   align-items: flex-start; /* Aligne le texte en haut */
   justify-content: center; /* Centre le texte horizontalement */
 }
 
-
-
-
 .back {
-  background-color: rgb(105, 6, 107);
+  background-color: rgb(255, 196, 0);
   transform: rotateY(180deg);
   color: #000000;
+  -webkit-text-stroke: 0.5px white;
+  text-shadow: none;
+  font-family: purple;
 }
-
 
 /* Augmenter la taille du texte dans les cercles */
 /* Styles pour la section tokenomics */
@@ -155,113 +154,55 @@ Version      : 1.3
   padding-bottom: 105px;
 }
 
-/* Styles pour les éléments de statistiques */
-.stats .stat-circle {
-  background-color: red;
-  width: 217px;
-  font-family: purple;
-  color: #000000;
-  height: 217px;
-  border-radius: 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.stats .stat-circle span {
-  font-size: 52px;
-}
-
-/* Styles pour les animations AOS */
-[data-aos][data-aos][data-aos-delay="50"],
-body[data-aos-delay="50"] [data-aos] {
-  transition-delay: 0;
-}
-
-[data-aos][data-aos][data-aos-easing=ease],
-body[data-aos-easing=ease] [data-aos] {
-  transition-timing-function: ease;
-}
-
-[data-aos][data-aos][data-aos-duration="400"],
-body[data-aos-duration="400"] [data-aos] {
-  transition-duration: .4s;
-}
-
-[data-aos^=fade][data-aos^=fade] {
-  opacity: 0;
-  transition-property: opacity, transform;
-}
-
-/* Styles spécifiques pour l'animation fade-up-right */
-[data-aos=fade-up-right] {
-  transform: translate3d(-100px, 100px, 0);
-}
-
-
 .col-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: flex; /* Utiliser flexbox pour aligner les enfants en ligne */
+  flex-wrap: nowrap; /* Empêcher les enfants de se replier sur plusieurs lignes */
+  justify-content: space-between; /* Espacement égal entre les éléments */
+  gap: 20px; /* Espacement entre les conteneurs, ajustez si nécessaire */
 }
 
-.stats .stat-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.col-33 {
-  width: calc(33.33% - 20px);
-  padding: 0 10px;
-}
-
-.stats .stat-container .icon {
-  display: flex;
-  justify-content: center;
-  margin-bottom: -30px; /* Adjust as necessary */
-  z-index: 10;
-}
-
-.stats .stat-container .icon img {
-  width: 40px; /* Adjust size as necessary */
-  height: 40px; /* Adjust size as necessary */
+.stats .container {
+  flex: 1; /* Les conteneurs prendront un espace égal */
+  display: flex; /* Pour centrer le contenu verticalement */
+  justify-content: center; /* Centrer le contenu horizontalement */
+  align-items: center; /* Centrer le contenu verticalement */
+  flex-direction: column; /* Aligner les enfants verticalement dans chaque conteneur */
+  text-align: center; /* Centrer le texte à l'intérieur des conteneurs */
 }
 
 .stats .stat-circle {
-  background-color: red;
+  background-color: rgb(255, 136, 0);
   width: 217px;
   font-family: purple;
   color: #000000;
   height: 217px;
-  border-radius: 150px;
+  border-radius: 50%; /* Assurer que les cercles sont parfaitement ronds */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: 9px solid #000000;
+  margin: -5%; /* Supprimer les marges pour alignement précis */
+}
+
+.stats .stat-circle p {
+  margin: 0; /* Supprimer la marge par défaut du paragraphe */
 }
 
 .stats .stat-circle span {
   font-size: 52px;
+  margin: 0;
 }
 
-
-
-body, html {
+body,
+html {
   font-family: "Purple", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 26px;
-  background: #7a2e8a;
-  background-position: center center;
-  background-origin: content-box;
-  background-size: cover;
-  background-attachment: fixed;
-  position: fixed;
-  /* background-image: url('../img/ufclooog.jpg'); */
+  background: #870404;
+  background-image: url("../img/back.png");
   height: 100%;
-  position: relative;
   width: 100%;
 }
 
@@ -331,7 +272,7 @@ fieldset {
 }
 /*START PRELOADER DESIGN*/
 .preloader {
-  background: #7a2e8a;
+  background: #870404;
   bottom: 0;
   left: 0;
   position: fixed;
@@ -365,10 +306,10 @@ img2 {
   margin: -40px 0 0 -40px;
   font-size: 10px;
   text-indent: -12345px;
-  border-top: 8px solid #c62a88;
-  border-right: 8px solid #c62a88;
-  border-bottom: 8px solid #c62a88;
-  border-left: 8px solid #fff;
+  border-top: 8px solid #000000;
+  border-right: 8px solid #000000;
+  border-bottom: 8px solid #000000;
+  border-left: 8px solid #adaaaa;
   border-radius: 50%;
   -webkit-animation: spinner 700ms infinite linear;
   animation: spinner 700ms infinite linear;
@@ -397,17 +338,21 @@ img2 {
 }
 
 @media (max-width: 810px) {
-  .col-33, .col-40, .col-50, .col-60, .col-100 {
-      width: 100%;
+  .col-33,
+  .col-40,
+  .col-50,
+  .col-60,
+  .col-100 {
+    width: 100%;
   }
 }
 
 @media (max-width: 810px) {
   .contract-copy {
-      flex-direction: column;
-      overflow: hidden;
-      text-align: center;
-      overflow-wrap: anywhere;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+    overflow-wrap: anywhere;
   }
 }
 
@@ -431,11 +376,12 @@ section {
   font-weight: 600;
   position: relative;
   margin-bottom: 60px;
-  text-transform: uppercase;
-  font-family: 'Purple', sans-serif;
+  /* text-transform: uppercase; */
+  font-family: mma;
   font-size: 37px;
   color: rgb(237, 171, 28);
   text-shadow: 3px 4px rgb(100, 42, 6);
+  -webkit-text-stroke: 2px #000000;
 }
 .title_spectial:after {
   content: "";
@@ -455,14 +401,13 @@ section {
 /*END SECTION TITLE DESIGN*/
 /*START SCROLL TO TOP*/
 .topcontrol {
-  background: #1b0341 none repeat scroll 0 0;
+  background: #ec0303 none repeat scroll 0 0;
   border-radius: 30px;
-  border: 2px solid #c62a88;
-  bottom: 5px;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
-  color: #fff;
+  color: #000000;
+  -webkit-text-stroke-color: 2px #000000;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 35px;
   height: 50px;
   line-height: 47px;
   opacity: 1;
@@ -474,6 +419,7 @@ section {
   transition: all 0.2s ease 0s;
   width: 50px;
 }
+
 .topcontrol:hover {
   background: none;
   border: 2px solid #fff;
@@ -561,23 +507,20 @@ section {
   display: block !important;
 }
 .bg-faded {
-  background-color: transparent;
-  -webkit-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+  background-color: black;
+  /* -webkit-transition: all 0.5s ease 0s; */
+  /* transition: all 0.5s ease 0s; */
 }
 .navbar-fixed {
   z-index: 999;
   position: fixed;
   opacity: 0.98;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=98)";
   width: 100%;
   padding: 20px 0;
   top: 0;
-  -webkit-animation: fadeInDown 800ms; 
-  animation: fadeInDown 800ms;
-  -webkit-backface-visibility: hidden;
-  border-radius: 0px;
-  background: #1b0341;
+  backface-visibility: hidden;
+  border-radius: 0;
+  background: #000000;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.07);
 }
 
@@ -588,6 +531,7 @@ section {
   padding: 20px 0;
 }
 .header_right {
+  /* font-family: "mma"; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -620,7 +564,7 @@ section {
   font-size: 30px;
   color: #ffa527;
   text-shadow: 1px 3px 3px #020000;
-  font-family: 'Purple';
+  font-family: "Purple";
 }
 #navigation.navbar-fixed #main-menu ul li a {
   color: #ffa527;
@@ -759,20 +703,19 @@ section {
   position: relative;
 }
 .hero-text h2 {
-  color: rgb(243, 44, 5);
+  color: rgb(237, 171, 28);
   font-size: 32px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 72px;
   padding-top: 200px;
-  text-transform: capitalize;
   margin-bottom: 20px;
-  font-family: 'Purple';
-  text-shadow: 2px 3px 2px rgb(0, 0, 0);
-
+  font-family: "mma";
+  -webkit-text-stroke: 2px #000000;
+  /* text-shadow: 2px 3px 2px rgb(255, 0, 0); */
 }
 .hero-text p {
-  font-family: 'Purple';
+  font-family: "Purple";
   color: #ffb700;
   font-size: 20px;
   text-shadow: 1px 0.5px 1px #000000;
@@ -810,7 +753,7 @@ section {
   line-height: 58px;
   text-transform: capitalize;
   margin-bottom: 15px;
-  font-family: 'Purple', sans-serif;
+  font-family: "Purple", sans-serif;
   font-size: 40px;
   color: rgb(204, 04, 04);
   text-shadow: 2px 4px rgb(0, 0, 0);
@@ -851,7 +794,7 @@ section {
   width: 80px;
 }
 .single_process h4 {
-  background: #c62a88;
+  background: #b80303;
   border-radius: 500px;
   color: #fff;
   font-size: 30px;
@@ -872,7 +815,7 @@ section {
 .single_process h3 {
   font-size: 20px;
   font-weight: 700;
-  font-family: 'Purple';
+  font-family: "Purple";
   color: rgb(255, 183, 0);
   text-shadow: 1px 2px rgb(100, 42, 6);
 }
@@ -921,14 +864,14 @@ section {
   font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 20px;
-  font-family: 'Purple', sans-serif;
+  font-family: "Purple", sans-serif;
   font-size: 40px;
   color: rgb(191, 29, 0);
   text-shadow: 3px 4px rgb(100, 42, 6);
 }
 .traders-text p {
   margin-bottom: 30px;
-  font-family: 'Purple';
+  font-family: "Purple";
   color: #ffaa22;
   font-size: 19px;
   text-shadow: 1px 0.5px 1px #000000;
@@ -950,7 +893,7 @@ section {
 }
 .traders_list p {
   overflow: hidden;
-  font-family: 'Purple';
+  font-family: "Purple";
   color: rgb(255, 183, 0);
   font-size: 17px;
   text-shadow: 1px 0.5px 1px #000000;
@@ -1160,7 +1103,7 @@ section {
 .token-img h4 {
   font-weight: 600;
   margin-bottom: 60px;
-  font-family: 'Purple', sans-serif;
+  font-family: "Purple", sans-serif;
   font-size: 37px;
   color: rgb(237, 171, 28);
   text-shadow: 3px 4px rgb(100, 42, 6);
@@ -1229,7 +1172,7 @@ section {
   text-shadow: 1px 0.5px 1px #000000;
 }
 .roadmap p {
-  font-family: 'Purple';
+  font-family: "Purple";
   color: #ff8819;
   text-shadow: 1px 0.5px 1px #000000;
   font-size: 16px;
@@ -1717,7 +1660,7 @@ section {
 .footer {
   padding-bottom: 80px;
   padding-top: 80px;
-  background: #310758;
+  background: #000000;
   position: relative;
 }
 
@@ -1728,7 +1671,7 @@ section {
   margin-top: 10px;
   margin-bottom: 25px;
   color: rgb(224, 4, 4);
-  font-family: Candice;
+  font-family: Purple;
   text-shadow: 1px 2px 3px black;
   font-size: 20px;
 }
@@ -1890,6 +1833,17 @@ section {
   background: linear-gradient(0deg, #00ddff, #0e76a8);
 }
 
+.s_discord {
+  background: -webkit-linear-gradient(bottom, #0e76a8, #008ed0);
+  background: linear-gradient(0deg, #00ddff, #0e76a8);
+}
+
+.s_dex {
+  background: -webkit-linear-gradient(bottom, #0e76a8, #008ed0);
+  background: linear-gradient(0deg, #00ddff, #0e76a8);
+  margin-bottom: 15%;
+}
+
 /*END FOOTER SOCIAL DESIGN*/
 .footer_copyright {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -1898,8 +1852,7 @@ section {
 }
 .footer_copyright p {
   text-align: center;
-  text-transform: capitalize;
-  font-family: 'Purple';
+  font-family: "Purple";
   font-size: 18px;
   color: rgb(212, 21, 21);
   text-shadow: 2px 2px 2px #000000;
