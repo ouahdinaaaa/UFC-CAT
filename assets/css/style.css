@@ -221,7 +221,7 @@ body[data-aos-duration="400"] [data-aos] {
 }
 
 
-body {
+html, body {
   font-family: "Purple", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -229,13 +229,9 @@ body {
   background: #870404;
   background-image: url('../img/back.png');
   background-size: cover;
+  height: 100%;
 }
 
-html,
-body {
-  height: 100%;
-  position: relative;
-}
 h1,
 h2,
 h3,
@@ -540,7 +536,7 @@ section {
 
 #navigation {
   padding: 20px 0;
-  height: 13%;
+  height: 17%;
 }
 #navigation.navbar-fixed {
   padding: 20px 0;
@@ -554,6 +550,13 @@ section {
   flex-basis: auto;
   float: right;
 }
+
+.header_right  ul li a {
+  color: white; 
+  -webkit-text-stroke: 2px black; 
+  text-shadow: 2px 3px 2px black;
+}
+
 @media only screen and (max-width: 480px) {
   .header_right {
     float: none;
@@ -571,18 +574,18 @@ section {
   position: relative;
 }
 #main-menu ul li a {
-  color: #fff;
   font-size: 15px;
   text-transform: capitalize;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-size: 30px;
-  color: #ffa527;
-  text-shadow: 1px 3px 3px #020000;
   font-family: 'Purple';
+  color: white; 
+  -webkit-text-stroke: 2px black; 
+  text-shadow: 2px 3px 2px black;
 }
 #navigation.navbar-fixed #main-menu ul li a {
-  color: #ffa527;
+  color: white;
 }
 #navigation.navbar-fixed #main-menu ul li a:hover,
 #navigation.navbar-fixed #main-menu ul li a:focus,
@@ -592,7 +595,7 @@ section {
 }
 
 .slicknav_nav_icon {
-  color: #ffa527;
+  color: white;
   font-size: 24px;
 }
 .slicknav_menu .slicknav_icon:before {
@@ -807,6 +810,7 @@ section {
 }
 .process_num {
   background: rgba(0, 0, 0, 0.319) none repeat scroll 0 0;
+  background-color: rgb(0, 0, 0);
   border-radius: 500px;
   display: inline-block;
   height: 80px;
