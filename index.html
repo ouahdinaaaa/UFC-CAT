@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=true"
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=true"
     />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="CandyCrush Coin" />
@@ -16,9 +16,10 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <!-- Google Font -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
       
+    
     />
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
@@ -27,6 +28,7 @@
     <!--- owl carousel Css-->
     <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.css" />
     <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css" />
+    
     <!--slicknav Css-->
     <link rel="stylesheet" href="assets/css/slicknav.css" />
     <!-- MAGNIFIC CSS -->
@@ -41,6 +43,12 @@
     <link rel="icon" href="assets/img/cute1.png" type="image/png" />
   </head>
   <body data-offset="80" data-spy="scroll">
+    <style>
+      @font-face {
+        font-family: mmaa, purple;
+        src: url("assets/fonts/mma.ttf") format("truetype");
+      }
+    </style>
     <div class="preloader">
       <div class="status">
         <div class="status-mes"></div>
@@ -64,10 +72,10 @@
               <nav id="main-menu" class="ml-auto">
                 <ul>
                   <li><a href="#home">Home</a></li>
-                  <li><a href="#about">About</a></li>
+                  <li><a href="#about">WhitePaper</a></li>
                   <li><a href="#token">Token</a></li>
                   <li><a href="#roadmap">Roadmap</a></li>
-                  <li><a href="#roadmap">Game</a></li>
+                  <li><a href="#Game">Game</a></li>
                 </ul>
               </nav>
               <div id="mobile_menu"></div>
@@ -87,8 +95,8 @@
         <div class="row">
           <div class="col-lg-6 col-sm-12 col-xs-12">
             <div class="hero-text">
-              <h2 style="color: white;font-size: 60px; -webkit-text-stroke: 5px black; text-shadow: 1px 1px 1px black;">UFC CAT</h2>
-              <p style="color: white;font-size: 25px; -webkit-text-stroke: 2px black; text-shadow: 3px 2px 3px black;">
+              <h2 style="font-family: mmaa, purple">UFC CAT</h2>
+              <p>
                 Welcome to the world of Ultimate Fighting Cat (UFCAT) – where memes, NFTs, and blockchain technology converge to create a revolutionary ecosystem. UFCAT is set to redefine the landscape of memescoin on the Cronos blockchain by introducing a unique concept of combat through NFTs.
                 In recent years, memes have become an integral part of internet culture, providing entertainment, humor, and social commentary. However, the value of memes has largely been untapped in the realm of cryptocurrency and blockchain technology. With UFCAT, we aim to change that.
               </p>
@@ -109,7 +117,7 @@
     <!-- END  HOME -->
 
     <!-- START ABOUT -->
-    <section id="about" class="about_us section-padding">
+    <section id="about">
       <div class="container">
         <h2 class="title_spectial">WhitePaper</h2>
         <div class="row">
@@ -204,38 +212,39 @@
     </section>
     <!-- END PROCESS -->
 
-    <!-- START TRADERS -->
-    <section id="tokenomics" class="section-padding">
+
+    <section id="token" class="section-padding">
       <div class="container">
         <h2 class="title_spectial">TOKENOMICS</h2>
-        <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
-          <div class="col-33 stat-container animate">
+        <div class="col-container">
+          <div class="col-33 stat-container">
             <div class="stat-circle">
               <p>TOTAL SUPPLY</p>
-          <span class="stat">100B</span>
-        </div>
-      </div>
-      <div class="col-33 stat-container">
-        <div class="stat-circle">
-          <p>TAX</p>
-          <span class="stat">0%</span>
-        </div>
-      </div>
-      <div class="col-33 stat-container">
-        <div class="stat-circle">
-          <p>Team</p>
-          <span class="stat">5%</span>
-        </div>
-      </div>
-      <div class="col-33 stat-container">
-        <div class="stat-circle">
-          <p>LIQUIDITY</p>
-          <span class="stat">BURNT</span>
-        </div>
-      </div>
+              <span class="stat">100B</span>
+            </div>
+          </div>
+          <div class="col-33 stat-container">
+            <div class="stat-circle">
+              <p>TAX</p>
+              <span class="stat">0%</span>
+            </div>
+          </div>
+          <div class="col-33 stat-container">
+            <div class="stat-circle">
+              <p>Team</p>
+              <span class="stat">5%</span>
+            </div>
+          </div>
+          <div class="col-33 stat-container">
+            <div class="stat-circle">
+              <p>LIQUIDITY</p>
+              <span class="stat">BURNT</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    
 
     <section id="roadmap" class="section-padding">
       <div class="text-center">
@@ -251,7 +260,7 @@
           <div class="case">
             <div class="front">Phase 2</div>
             <div class="back">
-        Launched on Cronos : Successfully initiated the token on the Cronos blockchain.
+        Launched on Solana : Successfully initiated the token on the Cronos blockchain.
         Liquidity Locked : Ensured financial security by locking liquidity to provide stability and trust.
         Contract Renounced : Ownership of the contract was renounced to make the token fully decentralized.
             </div>
@@ -509,10 +518,17 @@
     <div class="footer">
       <div class="container">
         <div class="row">
+          <div
+            class="col-lg-3 col-sm-6 col-xs-12 wow fadeInLeft"
+            data-wow-duration="1s"
+            data-wow-delay="0.4s"
+            data-wow-offset="0"
+          >
             <div class="footer_logo">
-              <!-- <img src="assets/img/blackcat.png"/> -->
-              <p>Biggest coin.</p>
+              <img src="assets/img/blackcat.png" />
+              <p>Join the Meow-vement.</p>
             </div>
+
             <div class="footer_profile">
               <ul>
                 <li>
@@ -525,27 +541,19 @@
                     ><i class="fa fa-telegram" style="font-size: 30px"></i
                   ></a>
                 </li>
-                <!-- <li>
-                  <a href="#" class="s_discord">
-                    <span>&#xf392;</span>
+                <li>
+                  <a href="#" class="s_discord"
+                    ><i class="fa fa-discord" style="font-size: 30px"></i
+                  ></a>
+                </li>
+                <li style="height: 25px">
+                  <a href="#" class="s_dex" style="margin-top: -25%">
+                    <img src="./assets/img/dex.png" alt="Dexscreener" style=" width: 45px; height: 45px; margin-left: -9%;margin-top: -5%;"/>
                   </a>
-                </li> -->
+                </li>
               </ul>
             </div>
-          </div>
-          <!--- END COL -->
-        </div>
-        <!--- END ROW -->
-        <div class="row">
-          <!-- Ajout de cette balise -->
-          <div class="col-lg-12 text-center">
-            <div class="footer_copyright">
-              <p>&copy; 2024 UFC CAT. All Rights Reserved.</p>
-            </div>
-          </div>
-      </div>
-    </div>
-    <!-- END FOOTER -->
+          </div>    <!-- END FOOTER -->
 
     <!-- Latest jQuery -->
     <script>

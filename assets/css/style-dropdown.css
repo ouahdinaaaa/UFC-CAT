@@ -681,6 +681,7 @@ font-size: 20px;
   color: #fff;
   font-size: 46px;
   font-weight: 600;
+  font-family : purple;
   letter-spacing: 0;
   line-height: 66px;
   padding-top: 200px;
@@ -1563,7 +1564,10 @@ font-size: 20px;
   font-size: 15px;
 }
 .map {
+
 }
+
+
 .map iframe {
   width: 100%;
   padding-right: 40px;
@@ -1793,12 +1797,19 @@ font-size: 20px;
   background: -webkit-linear-gradient(bottom, #0e76a8, #008ed0);
   background: linear-gradient(0deg, #00ddff, #0e76a8);
 }
+
+.s_dex {
+  background: -webkit-linear-gradient(bottom, #0e76a8, #008ed0);
+  background: linear-gradient(0deg, #00ddff, #0e76a8);
+}
+
 .s_facebook{background: -webkit-linear-gradient(bottom, #1C58A1, #1C58A1);background: linear-gradient(0deg, #1C58A1, #1C58A1);}
 .s_twitter{background: -webkit-linear-gradient(bottom, #0CBCE3, #0CBCE3);background: linear-gradient(0deg, #0CBCE3, #0CBCE3);}
 .s_instagram{background: -webkit-linear-gradient(bottom, #9d0191, #9d0191);background: linear-gradient(0deg, #9d0191, #9d0191);}
 .s_linkedin{background: -webkit-linear-gradient(bottom, #0e76a8, #0e76a8);background: linear-gradient(0deg, #0e76a8, #0e76a8);}
 .s_telegram{background: -webkit-linear-gradient(bottom, #0e76a8, #008ed0);background: linear-gradient(0deg, #00ddff, #0e76a8);}
 .s_discord{background: -webkit-linear-gradient(bottom, #0e76a8, #5e2885);background: linear-gradient(0deg, #00ddff, #5e2885);}
+.s_dex{background: -webkit-linear-gradient(bottom, #0e76a8, #5e2885);background: linear-gradient(0deg, #00ddff, #5e2885);}
 /*END FOOTER SOCIAL DESIGN*/
 .footer_copyright {
   border-top: 1px solid rgba(255, 255, 255, 0.08);

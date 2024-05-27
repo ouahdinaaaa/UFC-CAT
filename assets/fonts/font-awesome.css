@@ -26,8 +26,7 @@
 
 @font-face {
   font-family: "mma";
-  src: url("./Dream.ttf") format("truetype");
-  display: flex;
+  src: url("./Dream.ttf") format(truetype); 
 }
 
 @font-face {
