@@ -189,31 +189,47 @@
     <section id="token" class="section-padding" style="width: 100%;">
       <div class="container">
         <h2 class="title_spectial">TOKENOMICS</h2>
-        <div class="row text-center">
-          <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
-            <div class="stat-circle">
-              <p>TOTAL SUPPLY</p>
-              <span class="stat">100B</span>
+        <div id="carouselExampleIndicators" class="carousel" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="stat-circle">
+                <p>TOTAL SUPPLY</p>
+                <span class="stat">100B</span>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="stat-circle">
+                <p>TAX</p>
+                <span class="stat">0%</span>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="stat-circle">
+                <p>Team</p>
+                <span class="stat">5%</span>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="stat-circle">
+                <p>LIQUIDITY</p>
+                <span class="stat">BURNT</span>
+              </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
-            <div class="stat-circle">
-              <p>TAX</p>
-              <span class="stat">0%</span>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
-            <div class="stat-circle">
-              <p>Team</p>
-              <span class="stat">5%</span>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
-            <div class="stat-circle">
-              <p>LIQUIDITY</p>
-              <span class="stat">BURNT</span>
-            </div>
-          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
     </section>
@@ -232,7 +248,7 @@
             </div>
         </div>
           <div class="case">
-            <div class="front">Phase 2</div>
+            <div class="front" style="line-height: normal;">Phase 2</div>
             <div class="back">
               Launched on Solana : Successfully initiated the token on the Cronos blockchain.
               Liquidity Locked : Ensured financial security by locking liquidity to provide stability and trust.
@@ -240,7 +256,7 @@
             </div>
           </div>
           <div class="case">
-            <div class="front">Phase 3</div>
+            <div class="front" style="line-height: normal;">Phase 3</div>
             <div class="back">
               Accelerate efforts to make UFC CAT Token a dominant player in the
               cryptocurrency space. Forge partnerships with mainstream companies
@@ -248,7 +264,7 @@
             </div>
           </div>
           <div class="case">
-            <div class="front">Phase 4</div>
+            <div class="front" style="line-height: normal;">Phase 4</div>
             <div class="back">
               Accelerate efforts to make UFC CAT Token a dominant player in the
               cryptocurrency space. Forge partnerships with mainstream companies
@@ -256,7 +272,7 @@
             </div>
           </div>
           <div class="case">
-            <div class="front">Phase 5</div>
+            <div class="front" style="line-height: normal;">Phase 5</div>
             <div class="back">
               Further Contests and Community Events : Continuous engagement through more contests, community votes, and events designed to keep the community active and invested.
               Partnerships and Collaborations : Establishing strategic partnerships to expand our ecosystem and enhance UFCAT's offerings.
@@ -526,6 +542,11 @@
         }
       });
     </script>
+    <!-- Inclure jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Inclure le JavaScript de Bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery-1.12.4.min.js"></script>
     <!-- Latest compiled and minified Bootstrap -->
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

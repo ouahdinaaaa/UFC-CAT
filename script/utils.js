@@ -35,3 +35,15 @@ function decreaceTimer() {
     determineWinner({ player, enemy });
   }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  function isMobileDevice() {
+    return /Mobi|Android/i.test(navigator.userAgent) || window.innerWidth <= 768;
+  }
+
+  if (isMobileDevice()) {
+    document.getElementById("mobile_game").style.display = "block";
+  } else {
+    document.getElementById("desktop_game").style.display = "block";
+  }
+});
