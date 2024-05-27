@@ -236,52 +236,74 @@
     
 
     <section id="roadmap" class="section-padding">
-      <div class="text-center">
-        <h4 class="title_spectial">Roadmap</h4>
-        <div class="containerse">
-          <div class="case">
-            <div class="front">Phase 1</div>
-            <div class="back">
-              Launched on Solana : Successfully initiated the token on the Solana blockchain.
-              Liquidity Locked : Ensured financial security by locking liquidity to provide stability and trust.
-              Contract Renounced : Ownership of the contract was renounced to make the token fully decentralized.
-            </div>
-        </div>
-          <div class="case">
-            <div class="front" style="line-height: normal;">Phase 2</div>
-            <div class="back">
-              Launched on Solana : Successfully initiated the token on the Cronos blockchain.
-              Liquidity Locked : Ensured financial security by locking liquidity to provide stability and trust.
-              Contract Renounced : Ownership of the contract was renounced to make the token fully decentralized.
-            </div>
-          </div>
-          <div class="case">
-            <div class="front" style="line-height: normal;">Phase 3</div>
-            <div class="back">
-              Accelerate efforts to make UFC CAT Token a dominant player in the
-              cryptocurrency space. Forge partnerships with mainstream companies
-              and institutions to increase adoption.
-            </div>
-          </div>
-          <div class="case">
-            <div class="front" style="line-height: normal;">Phase 4</div>
-            <div class="back">
-              Accelerate efforts to make UFC CAT Token a dominant player in the
-              cryptocurrency space. Forge partnerships with mainstream companies
-              and institutions to increase adoption.
-            </div>
-          </div>
-          <div class="case">
-            <div class="front" style="line-height: normal;">Phase 5</div>
-            <div class="back">
-              Further Contests and Community Events : Continuous engagement through more contests, community votes, and events designed to keep the community active and invested.
-              Partnerships and Collaborations : Establishing strategic partnerships to expand our ecosystem and enhance UFCAT's offerings.
-              Cex’s listing 
-            </div>
+      <h4 class="title_spectial">Roadmap</h4>
+      <div style="display: flex; justify-content: center;">
+          <div id="carouselRoadmap" class="carousel" data-ride="carousel">
+              <div class="carousel-inner" style="line-height: normal;"></div>
+              <a class="carousel-control-prev" href="#carouselRoadmap" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselRoadmap" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
           </div>
       </div>
-      </div>
-    </section>
+  </section>
+  
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          var phases = [
+              {
+                  title: "Phase 1",
+                  description: "Launched on Solana : Successfully initiated the token on the Solana blockchain. Liquidity Locked : Ensured financial security by locking liquidity to provide stability and trust. Contract Renounced : Ownership of the contract was renounced to make the token fully decentralized."
+              },
+              {
+                  title: "Phase 2",
+                  description: "Launched on Solana : Successfully initiated the token on the Cronos blockchain. Liquidity Locked : Ensured financial security by locking liquidity to provide stability and trust. Contract Renounced : Ownership of the contract was renounced to make the token fully decentralized."
+              },
+              {
+                  title: "Phase 3",
+                  description: "Accelerate efforts to make UFC CAT Token a dominant player in the cryptocurrency space. Forge partnerships with mainstream companies and institutions to increase adoption."
+              },
+              {
+                  title: "Phase 4",
+                  description: "Accelerate efforts to make UFC CAT Token a dominant player in the cryptocurrency space. Forge partnerships with mainstream companies and institutions to increase adoption."
+              },
+              {
+                  title: "Phase 5",
+                  description: "Further Contests and Community Events : Continuous engagement through more contests, community votes, and events designed to keep the community active and invested. Partnerships and Collaborations : Establishing strategic partnerships to expand our ecosystem and enhance UFCAT's offerings. Cex’s listing"
+              }
+          ];
+  
+          var carouselInner = document.querySelector("#carouselRoadmap .carousel-inner");
+  
+          phases.forEach(function(phase, index) {
+              var carouselItem = document.createElement("div");
+              carouselItem.classList.add("carousel-item");
+              if (index === 0) {
+                  carouselItem.classList.add("active");
+              }
+  
+              var caseElement = document.createElement("div");
+              caseElement.classList.add("case");
+  
+              var front = document.createElement("div");
+              front.classList.add("front");
+              front.textContent = phase.title;
+  
+              var back = document.createElement("div");
+              back.classList.add("back");
+              back.textContent = phase.description;
+  
+              caseElement.appendChild(front);
+              caseElement.appendChild(back);
+              carouselItem.appendChild(caseElement);
+              carouselInner.appendChild(carouselItem);
+          });
+      });
+  </script>
     <!-- END ROADMAP -->
 
     <!--Start play game on phone -->

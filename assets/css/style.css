@@ -719,6 +719,10 @@ section {
   width: 90%;
   height: 500px;
 }
+#carouselRoadmap {
+  margin: 0 auto;
+}
+
 .item-bounce {
   -webkit-animation: bounce 8s infinite ease-in-out;
   animation: bounce 8s infinite ease-in-out;
