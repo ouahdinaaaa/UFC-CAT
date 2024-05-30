@@ -22,7 +22,7 @@ const shop = new Sprite({
     x: 600,
     y: 130,
   },
-  imageSrc: "./assets/shop.png",
+  imageSrc: "",
   scale: 2.75,
   framesMax: 6,
 });
