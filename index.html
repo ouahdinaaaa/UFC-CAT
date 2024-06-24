@@ -42,15 +42,30 @@
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <link rel="icon" href="assets/img/cute1.png" type="image/png" />
   </head>
+
+
   <body data-offset="80" data-spy="scroll">
-    <div class="preloader">
-      <div class="status">
-        <div class="status-mes"></div>
+    <div id="welcomeScreen" class="section_welcome">
+      <div class="block_welcome">
+      <div class="welcome" style="text-shadow: 3px 1px 1px black; -webkit-text-stroke: 2px black;">$UFCAT</div>
+      </div>
+      <div class="block_continue">
+        <a href="#" id="continueBtn" class="continue w-button" style="text-shadow: 3px 1px 1px black;">START</a>
+        <div class="button_shadow"></div>
       </div>
     </div>
+    <script>
+      document.getElementById('continueBtn').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('welcomeScreen').style.display = 'none';
+        document.getElementById('navigation').style.display = 'block';
+        document.getElementById('mainContent').style.display = 'block';
+      });
+    </script>
+
 
     <!-- START NAVBAR -->
-    <div id="navigation" class="fixed-top navbar-light bg-faded site-navigation">
+    <div id="navigation">
       <div class="container">
         <div class="row">
           <div class="col-lg-2 col-md-3 col-sm-4">
@@ -69,7 +84,7 @@
                   <li><a href="#about">WhitePaper</a></li>
                   <li><a href="#token">Token</a></li>
                   <li><a href="#roadmap">Roadmap</a></li>
-                  <li><a href="#Game">Game</a></li>
+                  <li><a href="#mobile_game">Game</a></li>
                 </ul>
               </nav>
               <div id="mobile_menu"></div>
@@ -186,100 +201,125 @@
     <!-- END PROCESS -->
 
 
-    <section id="token" class="section-padding" style="width: 100%;">
-      <div class="container">
-        <h2 class="title_spectial">TOKENOMICS</h2>
-        <div class="row text-center">
-          <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
-            <div class="stat-circle">
-              <p>TOTAL SUPPLY</p>
-              <span class="stat">100B</span>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
-            <div class="stat-circle">
-              <p>TAX</p>
-              <span class="stat">0%</span>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
-            <div class="stat-circle">
-              <p>Team</p>
-              <span class="stat">5%</span>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
-            <div class="stat-circle">
-              <p>LIQUIDITY</p>
-              <span class="stat">BURNT</span>
+</script>
+  <section id="token" class="section-padding">
+    <div class="container" style="text-align: center; line-height: 1; z-index: 1; position: relative;">
+      <h2 class="title_spectial">TOKENOMICS</h2>
+      <div class="button_footer_in">
+        <div class="container">
+          <div>
+            <div class="section-padding" style="color: white; margin-top: -10%; font-size: 35px;">
+              <span id="copy-text">CA soon</span>
+              <br>
+              <button id="copy-button" class="copy-button" onclick="copyText()">Click</button>
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <div class="row text-center" style="justify-content: center; align-items: center; margin-bottom: 20px; margin-top: -5%;">
+        <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="0" style="width: min-content;">
+          <div class="stat-circle">
+            <span class="stat">Total supply 100B</span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1.2s" data-wow-delay="1.1s" data-wow-offset="0" style="width: min-content;">
+          <div class="stat-circle">
+            <span class="stat">TAX 0%</span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1.3s" data-wow-delay="1.2s" data-wow-offset="0" style="width: min-content;">
+          <div class="stat-circle">
+            <span class="stat">TEAM 5%</span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1.4s" data-wow-delay="1.3s" data-wow-offset="0" style="width: min-content;">
+          <div class="stat-circle">
+            <span class="stat">LIQUIDITY BURNT</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script>
+  function copyText() {
+    var textToCopy = document.getElementById('copy-text').innerText;
+    navigator.clipboard.writeText(textToCopy).then(function() {
+      var button = document.getElementById('copy-button');
+      button.innerText = 'Copied';
+      setTimeout(function() {
+        button.innerText = 'Click';
+      }, 4000); // Reset text after 4 seconds
+    }).catch(function(err) {
+      console.error('Erreur lors de la copie du texte : ', err);
+    });
+  }
+</script>
+
     
 
     <section id="roadmap" class="section-padding">
-        <h4 class="title_spectial">Roadmap</h4>
-        <div class="containerse text-center">
-          <div class="case">
-            <div class="front">Phase 1</div>
-            <div class="back">
-              Launched on Solana : Successfully initiated the token on the Solana blockchain.
-              Liquidity Locked : Ensured financial security by locking liquidity to provide stability and trust.
-              Contract Renounced : Ownership of the contract was renounced to make the token fully decentralized.
-            </div>
-        </div>
-          <div class="case">
-            <div class="front">Phase 2</div>
-            <div class="back">
-              Launched on Solana : Successfully initiated the token on the Cronos blockchain.
-              Liquidity Locked : Ensured financial security by locking liquidity to provide stability and trust.
-              Contract Renounced : Ownership of the contract was renounced to make the token fully decentralized.
-            </div>
-          </div>
-          <div class="case">
-            <div class="front">Phase 3</div>
-            <div class="back">
-              Accelerate efforts to make UFC CAT Token a dominant player in the
-              cryptocurrency space. Forge partnerships with mainstream companies
-              and institutions to increase adoption.
-            </div>
-          </div>
-          <div class="case">
-            <div class="front">Phase 4</div>
-            <div class="back">
-              Accelerate efforts to make UFC CAT Token a dominant player in the
-              cryptocurrency space. Forge partnerships with mainstream companies
-              and institutions to increase adoption.
-            </div>
-          </div>
-          <div class="case">
-            <div class="front">Phase 5</div>
-            <div class="back">
-              Further Contests and Community Events : Continuous engagement through more contests, community votes, and events designed to keep the community active and invested.
-              Partnerships and Collaborations : Establishing strategic partnerships to expand our ecosystem and enhance UFCAT's offerings.
-              Cex’s listing 
-            </div>
+      <h4 class="title_spectial">Roadmap</h4>
+      <div class="carousel-container">
+          <div class="carousel">
+              <div class="case">
+                  <div class="front">Phase 1</div>
+                  <div class="back">
+                      Launched on Solana : Successfully initiated the token on the Solana blockchain.
+                      Liquidity Locked : Ensured financial security by locking liquidity to provide stability and trust.
+                      Contract Renounced : Ownership of the contract was renounced to make the token fully decentralized.
+                  </div>
+              </div>
+              <div class="case">
+                  <div class="front">Phase 2</div>
+                  <div class="back">
+                      Launched on Solana : Successfully initiated the token on the Cronos blockchain.
+                      Liquidity Locked : Ensured financial security by locking liquidity to provide stability and trust.
+                      Contract Renounced : Ownership of the contract was renounced to make the token fully decentralized.
+                  </div>
+              </div>
+              <div class="case">
+                  <div class="front">Phase 3</div>
+                  <div class="back">
+                      Accelerate efforts to make UFC CAT Token a dominant player in the
+                      cryptocurrency space. Forge partnerships with mainstream companies
+                      and institutions to increase adoption.
+                  </div>
+              </div>
+              <div class="case">
+                  <div class="front">Phase 4</div>
+                  <div class="back">
+                      Accelerate efforts to make UFC CAT Token a dominant player in the
+                      cryptocurrency space. Forge partnerships with mainstream companies
+                      and institutions to increase adoption.
+                  </div>
+              </div>
+              <div class="case">
+                  <div class="front">Phase 5</div>
+                  <div class="back">
+                      Further Contests and Community Events : Continuous engagement through more contests, community votes, and events designed to keep the community active and invested.
+                      Partnerships and Collaborations : Establishing strategic partnerships to expand our ecosystem and enhance UFCAT's offerings.
+                      Cex’s listing 
+                  </div>
+              </div>
           </div>
       </div>
+      <button class="prev">Précédent</button>
+      <button class="next">Suivant</button>
     </section>
+    <script src="script.js"></script>
+    
     <!-- END ROADMAP -->
 
     <!--Start play game on phone -->
     <section id="mobile_game" class="section-padding" style="display: none;">
       <div class="game_on_phone container">
         <h2 class="title_spectial">Play Game</h2>
-        <p class="text-center" style="color: red; font-size: 2.5em; line-height: normal;">Available only on computer</p>
+        <p class="text-center" style="color: red; font-size: 2em; line-height: normal; margin-bottom: 30px;-webkit-text-stroke: 2px black;">Available only on computer</p>
       </div>
     </section>
 
-    <!--End play game on phone -->
-
-
-    <!--Start play game on computer -->
-
-    <section id="game" class="section-padding games">
+    <section id="mobile_game" class="section-padding games">
       <div class="container">
         <h2 class="title_spectial">Play Game</h2>
         <div
@@ -434,85 +474,29 @@
         <script src="./index.js"></script>
       </div>
     </section>
-    <!--End play game candy-->
-
-    <!-- START COMPANY PARTNER LOGO  -->
-    <div class="partner-logo section-padding">
-      <div class="container">
-        <h2 class="title_spectial">Our Partners</h2>
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <div class="partner">
-              <a><img src="assets/img/partner/1.png" alt="image" style="width: 70%"/></a>
-              <a><img src="assets/img/partner/2.png" alt="image" /></a>
-              <a><img src="assets/img/partner/3.png" alt="image" /></a>
-              <a><img src="assets/img/partner/dextools.png" alt="image" style="width: 40%"/></a>
-              <a><img src="assets/img/partner/raydium.png" alt="image" style="width: 40%"/></a>
-              <a><img src="assets/img/partner/phantom1.png" alt="image" style="width: 45%"/></a>
-              <a><img src="assets/img/partner/1.png" alt="image" style="width: 70%"/></a>
-              <a><img src="assets/img/partner/2.png" alt="image" /></a>
-            </div>
-          </div>
-          <!-- END COL  -->
-        </div>
-        <!--END  ROW  -->
-      </div>
-      <!-- END CONTAINER  -->
-    </div>
-    <!-- END COMPANY PARTNER LOGO -->
 
     <!-- START FOOTER -->
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
-            <div class="footer_logo">
-              <img src="assets/img/blackcat.png" />
-              <p>Join the Meow-vement.</p>
-            </div>
-            <div class="footer_profile">
-              <ul>
-                <li>
-                  <a href="#" class="s_twitter"><i class="fa fa-twitter" style="font-size: 30px"></i></a>
-                </li>
-                <li>
-                  <a href="#" class="s_telegram"><i class="fa fa-telegram" style="font-size: 30px"></i></a>
-                </li>
-                <li style="height: 25px">
-                  <a href="#" class="s_discord" style="margin-top: -25%">
-                    <img src="./assets/img/discord.png" alt="discord" style=" width: 43px; height: 43px; margin-left: -10%;margin-top: -10%;"/>
-                  </a>
-                </li>
-                <li style="height: 25px">
-                  <a href="#" class="s_dex" style="margin-top: -25%">
-                    <img src="./assets/img/dex.png" alt="Dexscreener" style=" width: 45px; height: 45px; margin-left: -9%;margin-top: -5%;"/>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>    <!-- END FOOTER -->
+
+    <div class="section_join" id="join" style="margin-top: 3%;">
+      <div class="h7 title_spectial">JOIN US</div>
+      <div class="buttons">
+        <div class="button_footer">
+          <!-- <img src="./assets/img/bombo1.png" loading="lazy" alt class="image-10"> -->
+          <a href="#" target="_blank" class="buy_button w-button">TELEGRAM</a>
+        </div>
+        <div class="button_footer">
+          <a href="#" target="_blank" class="buy_button w-button">TWITTER</a>
+        </div>
+        <div class="button_footer">
+          <a href="#" target="_blank" class="buy_button w-button">DEXSCREENER</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- END FOOTER -->
 
     <!-- Latest jQuery -->
-    <script>
-      function copyContract(text, btnId) {
-        // Sélectionnez l'élément de texte à copier
-        var contractElement = document.getElementById("contract");
 
-        // Rendre l'élément de texte visible temporairement
-        contractElement.classList.remove("hiddens");
-
-        // Copiez le texte dans le presse-papiers
-        contractElement.select();
-        document.execCommand("copy");
-
-        // Cacher l'élément de texte à nouveau
-        contractElement.classList.add("hiddens");
-
-        // Changez le texte du bouton pour indiquer que le contrat a été copié
-        var btn = document.getElementById(btnId);
-        btn.textContent = "Copied";
-      }
-    </script>
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         function isMobileDevice() {
@@ -526,6 +510,8 @@
         }
       });
     </script>
+
+
     <script src="assets/js/jquery-1.12.4.min.js"></script>
     <!-- Latest compiled and minified Bootstrap -->
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
