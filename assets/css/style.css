@@ -527,7 +527,8 @@ body {
   background-color: #3bc1fe;
   transform: rotateY(180deg);
   color: #000000;
-  font-size: 14px;
+  font-size: 30px;
+  text-align: center;
   -webkit-text-stroke: 0.3px white;
   border: 5px solid #000000;
 }
