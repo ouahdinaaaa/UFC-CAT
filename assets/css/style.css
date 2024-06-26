@@ -632,7 +632,7 @@ button.prevs, button.nexts {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 30px;
+  font-size: 28px;
   justify-content: center;
   flex-direction: column;
   background-color: #176efa;
@@ -651,7 +651,7 @@ button.prevs, button.nexts {
     width: 130px;  /* Réduisez la taille pour les petits écrans */
     height: 130px; /* Réduisez la taille pour les petits écrans */
     /* line-height: px; */
-    font-size: 10px;
+    font-size: 9px;
     margin-top: 15px;
     position: inherit;
   }
